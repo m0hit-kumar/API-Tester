@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="toggle-mode-button">Toggle Mode</button>
+      <h1>API Test</h1>
+      <form class="form-div bg-color">
+        <label for="endpoint">Endpoint:</label>
+        <input type="text" id="endpoint" name="endpoint" value="https://newssource.pythonanywhere.com/api" />
+        <br />
+        <label for="request-method">Request Method:</label>
+        <select id="request-method" name="request-method">
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="DELETE">DELETE</option>
+        </select>
+        <br />
+        <label for="request-body">Request Body:</label>
+        <textarea id="request-body" name="request-body"></textarea>
+        <br />
+        <button type="submit">Send Request</button>
+      </form>
+      <br />
+       <button id="copyBtn">
+        <i class="fas fa-copy"></i>
+        <span>Copy</span>
+      </button>
+   
+          <pre class="code-block" id="response"></pre>
+     <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

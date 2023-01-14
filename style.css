@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: black;
+  background: url("/pattern.svg");
+  text-shadow: 0px -1px 0px #000, 0px 1px 0px #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.bg-color {
+  background-color: #fff;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#response {
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow-y: auto; /* scrollbar will be added only when content exceeds the div's height */
+  overflow-x: auto; /* scrollbar will not be added when content exceeds the div's width */
+}
+#copyBtn {
+  position: relative;
+  top: -1;
+  right: -1;
+}
+
+body.dark-mode {
+  background-color: #171921;
+  color: #fff;
+}
+.code-block {
+  background-color: #f5f5f5; /* or a different color that you prefer */
+  padding: 10px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+#toggle-mode-button:active {
+  background-color: #555;
+  color: #fff;
+}
+#toggle-mode-button {
+  background-color: #ccc; /* or a different color that you prefer */
+  color: #333; /* or a different color that you prefer */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#toggle-mode-button:hover {
+  background-color: #ddd; /* or a different color that you prefer */
+}
+
+#toggle-mode-button.dark-mode {
+  background-color: #333; /* or a different color that you prefer */
+  color: #fff; /* or a different color that you prefer */
+}
+
+#toggle-mode-button.dark-mode:hover {
+  background-color: #444; /* or a different color that you prefer */
+}
+
+#toggle-mode-button::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f186";
+  padding-right: 10px;
+}
+
+.black-text {
+  color: #171921;
+}
+
+.svg-objects * {
+  fill: red;
+}
